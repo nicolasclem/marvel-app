@@ -17,7 +17,7 @@ const CardContainer = () => {
   
   const [selectedTeam ,setSelectedTeam] =useState("")
 
-const URLname=`https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${heroeName}&limit=2&apikey=a6ce90178defdee58938a19908a7c5f3`
+const URLname=`https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${heroeName}&limit=5&apikey=a6ce90178defdee58938a19908a7c5f3`
 const {data} =UseFetch(URLname)
 
 const selected = ( character)=>{

@@ -52,9 +52,9 @@ const handleSubmit =(e)=>{
             mb={3}
             // sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-           Selecciona tu personaje de Marvel
+            Selecciona tu personaje de Marvel
           </Typography>
-    <form onSubmit={handleSubmit}>
+    <Box component="form" onSubmit={handleSubmit}>
     <SearchC>
     
     <TextField
@@ -68,7 +68,7 @@ const handleSubmit =(e)=>{
         />
 
   </SearchC>
-  </form>
+  </Box>
   </Box>
   )
 }
