@@ -1,15 +1,16 @@
-import CardContainer from "./components/CardContainer/CardContainer";
+import { ThemeProvider } from "@mui/material/styles";
+import AppRouter from "./routers/AppRouter";
+import theme from "./theme/themeConfig";
 
-//import Home from "./components/Home/Home";
-import NavBar from "./components/NavBar/NavBar";
+
 
 
 function App() {
   return (
     <div >
-      <NavBar />
-      {/* <Home /> */}
-      <CardContainer />
+      <ThemeProvider  theme={theme}>
+        <AppRouter />
+       </ThemeProvider>
     </div>
   );
 }
